@@ -1,0 +1,157 @@
+.workPage {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.workPageTitleContainer {
+    margin-top: 30px;
+    font-size: 30px;
+    color: #0A192F;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.projectContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+}
+
+.projectSubContainer {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projectWrapper {
+    border: 1px solid #0A192F;
+    /* background-color: #fff; */
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70%;
+    margin-top: 50px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #00000029;
+}
+
+.projectImage {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 8px 8px 10px #00000029;
+    margin-bottom: 10px;
+}
+
+.projectButton {
+    min-width: 150px;
+    min-height: 30px;
+    border: none;
+    border-radius: 10px;
+    background-color: #0A192F;
+    color: white;
+    font-size: 18px;
+    font-family: 'Taviraj', serif;
+    line-height: 25px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.viewMoreDesignsOnBehance {
+    margin-top: 50px;
+    min-width: 150px;
+    min-height: 30px;
+    border: 1px solid #0A192F;
+    border-radius: 10px;
+    background-color: none;
+    color: #0A192F;
+    font-size: 18px;
+    font-family: 'Taviraj', serif;
+    line-height: 25px;
+    padding: 10px 20px;
+    margin-top: 50px;
+    letter-spacing: 1px;
+    cursor: pointer;
+
+}
+
+.viewMoreDesignsOnBehance:hover {
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+    animation-name: hover;
+}
+
+.projectButton:hover {
+    animation-fill-mode: forwards;
+    animation-duration: 0.2s;
+    animation-name: hover-reversed;
+}
+
+
+@keyframes hover {
+    0% {
+        border: 1px solid #0A192F;
+        background-color: none;
+        color: #0A192F;
+    }
+
+    100% {
+
+        border: none;
+        background-color: #0A192F;
+        color: white;
+    }
+}
+
+@keyframes hover-reversed {
+
+
+    0% {
+
+        border: none;
+        background-color: #0A192F;
+        color: white;
+    }
+
+    100% {
+        border: 1px solid #0A192F;
+        background-color: white;
+        color: #0A192F;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .workPageTitleContainer {
+        width: 90%;
+        text-align: center;
+    }
+
+    .titleButton {
+        width: 380px;
+    }
+
+    .projectContainer {
+        flex-direction: column;
+    }
+
+    .projectSubContainer {
+        width: 90%;
+    }
+
+    .projectWrapper {
+        padding: 30px;
+        width: 100%;
+    }
+
+    .projectButton {
+        font-size: 15px;
+    }
+}

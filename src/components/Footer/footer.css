@@ -1,0 +1,49 @@
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0A192F;
+    padding: 20px;
+    height: 30px;
+    margin-top: 50px;
+    box-sizing: none;
+}
+
+.footerIcon {
+    height: 50px;
+}
+
+.footerText {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.footerDevignText {
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+@media screen and (max-width: 580px) {
+    footer {
+        margin-top: 20px;
+    }
+
+    .footerIcon {
+        height: 40px;
+    }
+
+    .footerDevignText {
+        font-weight: 400;
+        font-size: 18px;
+        letter-spacing: 1.5px;
+    }
+
+    .footerDateText {
+        font-size: 10px;
+    }
+
+
+}

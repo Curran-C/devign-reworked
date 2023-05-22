@@ -1,0 +1,183 @@
+.servicePage {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cardContainer {
+    display: flex;
+    width: 90%;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 25%;
+    /* margin-right: 45px; */
+    margin-top: 50px;
+    background-color: #fff;
+    padding: 25px 25px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px #00000029;
+}
+
+.cardWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.cardTitle {
+    font-weight: 600;
+    font-size: 23px;
+    margin: 10px auto 5px auto;
+    letter-spacing: 1px;
+    /* text-decoration: underline; */
+}
+
+.cardContent {
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+.htmlWordpressContainer {
+    width: 90%;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.htmlWordpressTitleContainer {
+    width: 80%;
+    display: flex;
+    text-align: center;
+    margin: 50px auto;
+}
+
+.htmlWordpressTitle {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.htmlcontainer,
+.wordPressContainer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.htmlImage,
+.wordPressImage {
+    height: 200px;
+}
+
+.htmlContentContainer,
+.wordPressContentContainer {
+    width: 75%;
+    text-align: justify;
+}
+
+.htmlContent,
+.wordPressContent {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 32px;
+}
+
+.contentPostTextContainer {
+    width: 65%;
+    margin: 10px auto 50px auto;
+    text-align: center;
+}
+
+.contentPostText {
+    font-size: 23px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #0A192F;
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 580px) {
+
+    .cardContainer {
+        width: 95%;
+        margin-top: 50px;
+    }
+
+    .card {
+        margin-right: 0;
+        width: 45%;
+        padding: 15px 5px;
+        margin-top: 15px;
+    }
+
+    .cardImage {
+        width: 90px;
+    }
+
+    .cardTitle {
+        font-size: 15px;
+    }
+
+    .cardContent {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
+    .htmlWordpressContainer {
+        width: 95%;
+    }
+
+    .htmlcontainer,
+    .wordPressContainer {
+        flex-direction: column;
+    }
+
+    .htmlImage {
+        margin-bottom: 20px;
+        height: 180px;
+    }
+
+    .htmlContentContainer,
+    .wordPressContentContainer {
+        text-align: center;
+        width: 80%;
+    }
+
+    .htmlContent,
+    .wordPressContent {
+        font-size: 18px;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .wordPressImage {
+        order: 2;
+        margin-bottom: 20px;
+        height: 180px;
+    }
+
+    .wordPressContentContainer {
+        order: 1;
+    }
+
+    .contentPostTextContainer {
+        width: 70%;
+        margin: 30px auto;
+        text-align: center;
+    }
+}
